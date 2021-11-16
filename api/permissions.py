@@ -11,6 +11,7 @@ class ObjReadOnly(permissions.BasePermission):
         # allow to all users to retrieve an object
         if request.method in ["GET"]:
             return True
+        return False
 
 
 class IsOwner(permissions.BasePermission):
@@ -34,6 +35,7 @@ class FullObjAccess(permissions.BasePermission):
                 or request.user.is_superuser
                 or obj.author == request.user
             )
+        return False
 
 
 class IsAdmin(permissions.BasePermission):
@@ -55,6 +57,7 @@ class IsUserSelf(permissions.BasePermission):
     def has_permission(self, request, view):
         if not bool(request.user and request.user.is_authenticated):
             return False
+        return False
 
     def has_object_permission(self, request, view, obj):
         if request.method not in ["GET", "PATCH"]:
