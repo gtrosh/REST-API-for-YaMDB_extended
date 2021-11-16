@@ -3,14 +3,8 @@ from django.core.mail import EmailMessage
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import (
-    filters,
-    generics,
-    mixins,
-    serializers,
-    status,
-    viewsets,
-)
+from rest_framework import (filters, generics, mixins, serializers, status,
+                            viewsets)
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
@@ -21,17 +15,11 @@ from users.tokens import account_activation_token
 from .filters import TitleFilter
 from .models import Category, Comment, Genre, Review, Title
 from .permissions import FullObjAccess, IsAdmin, ObjReadOnly, ReadOnly
-from .serializers import (
-    ActivationCodeSerializer,
-    CategorySerializer,
-    CommentSerializer,
-    ConfirmationCodeSerializer,
-    GenreSerializer,
-    ReviewSerializer,
-    TitleCreateSerializer,
-    TitleGetSerializer,
-    UserSerializer,
-)
+from .serializers import (ActivationCodeSerializer, CategorySerializer,
+                          CommentSerializer, ConfirmationCodeSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          TitleCreateSerializer, TitleGetSerializer,
+                          UserSerializer)
 
 User = get_user_model()
 
