@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "default")
 
-DEBUG = os.environ.get("DJANGO_SETTINGS_MODULE")
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
