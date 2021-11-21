@@ -129,7 +129,7 @@ sudo docker-compose exec web python manage.py collectstatic --noinput
 ```bash
 sudo docker-compose exec web python manage.py createsuperuser
 ```
-- (optional step) Fill database with start data"
+- (optional step) Fill database with start data:
 ```bash
 sudo docker-compose exec web python manage.py createsuperuser
 ```
