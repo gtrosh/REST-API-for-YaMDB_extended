@@ -62,7 +62,7 @@ For more information about this installation your can visit:
 
 ### 3. Get your remote server ready: 
 
-Copy `docker-compose.yaml` and `nginx/default.conf` from the folder on your local machine to your server. By default, `server_name` is `127.0.0.1`. You can change `nginx/default.conf` locally if you would like, before copying to the remote server.
+Copy `docker-compose.yaml` and `nginx/default.conf` from the folder on your local machine to your server. Remember to change `server_name` to your IP before copying.
 ```bash
 scp docker-compose.yml '<username>@<host>:/home/<username>'/docker-compose.yml
 scp nginx.conf '<username>@<host>:/home/<username>'/nginx/default.conf
@@ -133,7 +133,7 @@ sudo docker-compose exec web python manage.py createsuperuser
 ```bash
 sudo docker-compose exec web python manage.py createsuperuser
 ```
-To check that everything went OK and the data has been added, visit http://127.0.0.1/api/v1/. To add your own data, follow http://127.0.0.1/admin
+To check that everything went OK and the data has been added, visit http://127.0.0.1/api/v1/ if you used 127.0.0.1 as your host. Similarly, to add your own data, follow http://127.0.0.1/admin and login with creadentials provided in the previous step.
 
 To stop the containers, go to project root directory and run the command:
 ```bash
