@@ -45,7 +45,7 @@ cd your-folder-name
 # clone this repository:
 git clone git@github.com:gtrosh/yamdb_final.git
 ```
-### 2. Connect to your remote server and install Docker and Docker-compose 
+### 2. Connect to your remote server and install Docker and Docker-compose: 
 (note that the below instructions work for a Ubuntu server)
 
 *Docker:*
@@ -60,14 +60,14 @@ For more information about this installation your can visit:
 - Docker: https://www.docker.com/get-started
 - Docker-compose: https://docs.docker.com/compose/install/
 
-### 3. Get your remote server ready 
+### 3. Get your remote server ready: 
 
 Copy `docker-compose.yaml` and `nginx/default.conf` from the folder on your local machine to your server. By default, `server_name` is `127.0.0.1`. You can change `nginx/default.conf` locally if you would like, before copying to the remote server.
 ```bash
 scp docker-compose.yml '<username>@<host>:/home/<username>'/docker-compose.yml
 scp nginx.conf '<username>@<host>:/home/<username>'/nginx/default.conf
 ```
-### 4. Get your environment ready
+### 4. Get your environment ready:
 
 On your remote server, create `.env` file in the project root folder and provide the following environment variables:
 ```bash
@@ -80,7 +80,7 @@ DB_PORT=5432
 SECRET_KEY='<secret-key-of-your-Django-project>'
 DEBUG=False
 ```
-### 5. Set up *Workflow* with GitHub *Secrets*
+### 5. Set up *Workflow* with GitHub *Secrets*:
 
 To be able to use *Workflow* and take advantage of *GitHub Actions*, add environment variables to GitHub *Secrets* as follows:
 ```bash
