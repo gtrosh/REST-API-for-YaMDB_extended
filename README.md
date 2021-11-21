@@ -84,7 +84,7 @@ DEBUG=False
 
 To be able to use *Workflow* and take advantage of *GitHub Actions*, add environment variables to GitHub *Secrets* as follows:
 ```bash
-DB_ENGINE=<django.db.backends.postgresql>
+DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
 DB_USER=postgres
 DB_PASSWORD='<your-db-password>'
