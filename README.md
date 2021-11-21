@@ -99,7 +99,7 @@ SECRET_KEY='<secret-key-of-your-Django-project>'
 USER='<username on remote server>'
 HOST='<remote server IP>'
 PASSPHRASE='<passphrase for your ssh key, if you had set it>'
-SSH_KEY='<your SSH ключ (get get it, type the following command in your terminal: cat ~/.ssh/id_rsa)>'
+SSH_KEY='<your SSH ключ (to get it, type the following command in your terminal: cat ~/.ssh/id_rsa)>'
 
 TELEGRAM_TO='<chat ID for the chat that will receive the message>'
 TELEGRAM_TOKEN='<your bot token>'
@@ -118,16 +118,16 @@ sudo docker-compose up -d
 ```
 - Apply migrations:
 ```bash
-docker-compose exec web python manage.py makemigrations --noinput
-docker-compose exec web python manage.py migrate --noinput
+sudo docker-compose exec web python manage.py makemigrations --noinput
+sudo docker-compose exec web python manage.py migrate --noinput
 ```
 - Collect static files:
 ```bash
-docker-compose exec web python manage.py collectstatic --noinput
+sudo docker-compose exec web python manage.py collectstatic --noinput
 ```
 - Create super user:
 ```bash
-docker-compose exec web python manage.py createsuperuser
+sudo docker-compose exec web python manage.py createsuperuser
 ```
 - (optional step) Fill database with start data"
 ```bash
