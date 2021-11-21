@@ -64,8 +64,8 @@ For more information about this installation your can visit:
 
 Copy `docker-compose.yaml` and `nginx/default.conf` from the folder on your local machine to your server. By default, `server_name` is `127.0.0.1`. You can change `nginx/default.conf` locally if you would like, before copying to the remote server.
 ```bash
-scp docker-compose.yml <username>@<host>:/home/<username>/docker-compose.yml
-scp nginx.conf <username>@<host>:/home/<username>/nginx.conf
+scp docker-compose.yml '<username>@<host>:/home/<username>'/docker-compose.yml
+scp nginx.conf '<username>@<host>:/home/<username>'/nginx/default.conf
 ```
 ### 4. Get your environment ready
 
@@ -77,7 +77,7 @@ DB_USER=postgres
 DB_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
-SECRET_KEY=<secret-key-of-your-Django-project>
+SECRET_KEY='<secret-key-of-your-Django-project>'
 DEBUG=False
 ```
 ### 5. Set up *Workflow* with GitHub *Secrets*
@@ -91,8 +91,8 @@ DB_PASSWORD='<your-db-password>'
 DB_HOST=db
 DB_PORT=5432
 
-DOCKER_PASSWORD=<your-DockerHub-password>
-DOCKER_USERNAME=<your-DockerHub-username>
+DOCKER_PASSWORD='<your-DockerHub-password>'
+DOCKER_USERNAME='<your-DockerHub-username>'
 
 SECRET_KEY='<secret-key-of-your-Django-project>'
 
