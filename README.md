@@ -48,11 +48,11 @@ git clone git@github.com:gtrosh/yamdb_final.git
 ### 2. Connect to your remote server and install Docker and Docker-compose 
 (note that the below instructions work for a Ubuntu server)
 
-*Docker*
+*Docker:*
 ```bash
 sudo apt install docker.io
 ```
-*Docker-compose*
+*Docker-compose:*
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
