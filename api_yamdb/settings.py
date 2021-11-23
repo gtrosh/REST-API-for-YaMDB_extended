@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     "django_filters",
     "users",
     "api",
+    "redoc",
 ]
 
 MIDDLEWARE = [
