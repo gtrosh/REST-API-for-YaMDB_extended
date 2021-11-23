@@ -95,7 +95,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    '/var/www/static/'
+    '/var/www/static'
 ]
 
 MEDIA_URL = "/media/"
