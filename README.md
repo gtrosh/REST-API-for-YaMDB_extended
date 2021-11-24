@@ -118,12 +118,12 @@ sudo docker-compose up -d
 ```
 - Apply migrations:
 ```bash
-sudo docker-compose exec web python manage.py makemigrations --noinput
-sudo docker-compose exec web python manage.py migrate --noinput
+sudo docker-compose exec web python manage.py makemigrations --no-input
+sudo docker-compose exec web python manage.py migrate --no-input
 ```
 - Collect static files:
 ```bash
-sudo docker-compose exec web python manage.py collectstatic --noinput
+sudo docker-compose exec web python manage.py collectstatic --no-input
 ```
 - Create super user:
 ```bash
