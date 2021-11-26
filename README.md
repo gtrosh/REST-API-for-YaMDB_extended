@@ -143,9 +143,6 @@ sudo docker-compose stop
 Documentation is available at `/static/`
 Once the application has been rolled out, follow http://127.0.0.1/redoc/ to take a look.
 
-## Rolled out app
-The project is available at this [link](http://178.154.198.178/api/v1/)
-
 ## Authors
 - [Galina Troshkina](https://github.com/gtrosh) | [![Linkedin Badge](https://img.shields.io/badge/-gtro-0072b1?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andrespedes12/)](https://www.linkedin.com/in/galina-troshkina-87683831/) | [Twitter](https://twitter.com/LinaTrosh)
 - [Alexander Mikhailov](https://github.com/Sasha-Mikhailov)
