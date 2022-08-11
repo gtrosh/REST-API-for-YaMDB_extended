@@ -131,7 +131,7 @@ sudo docker-compose exec web python manage.py createsuperuser
 ```
 - (optional step) Fill database with start data:
 ```bash
-sudo docker-compose exec web python manage.py createsuperuser
+python manage.py loaddata fixtures.json
 ```
 To check that everything went OK and the data has been added, visit http://127.0.0.1/api/v1/ if you used 127.0.0.1 as your host. Similarly, to add your own data, follow http://127.0.0.1/admin and login with creadentials provided in the previous step.
 
